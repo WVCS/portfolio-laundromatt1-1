@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+body{
+  
+}
+div.bopeyes{
+  background-color: #F91D06;
+  border: 10px double grey;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  width: 400px;
+  top: 30px;
+  right: 38%;
+}
+ul{
+  list-style-type: none;
+  width: 99.16%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: Grey;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+}
+li{
+  display: inline;
+  float: left;
+}
+li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 50px;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+li:hover{
+  background-color: red;
+}
+div.container{
+  position: absolute;
+  top: 120px;
+  right: 18%
+}
+div.carousel-caption{
+  color: grey;
+  font-weight: bold;
+  font-size: 30px;
+}
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: red;
+  padding: 10px;
+  position: relative;
+  top: 915px
+}
+
+.grid-container > div {
+  background-color: grey;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+<body>
+     <div class="navbar">
+  <ul>
+  <li><a href="bopeyes.html"> Home </a></li>
+  <li><a href="menu.html"> Menu </a></li>
+</ul>
+  </div>
+  <div class="bopeyes">
+    Bopeyes </div>
+  <div class="container">
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2016/7/28/2/YW0808H_baked-chicken-tenders-with-honey-mustard_s4x3.jpg.rend.hgtvcom.616.462.suffix/1476820959088.jpeg"  alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Chicken Tenders</h3>
+          <p>Try our chicken tenders!</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://cdn.vox-cdn.com/thumbor/fZ2F6PJDDV12tBmrO_9d05jKbpY=/0x0:2000x1333/1200x800/filters:focal(840x507:1160x827)/cdn.vox-cdn.com/uploads/chorus_image/image/65568135/1163074464.jpg.0.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Chicken Sandwhiches</h3>
+          <p>Try our limited edition chicken sandwhiches!</p>
+        </div>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+ <div class="grid-container">
+  <div class="item1">Bopeyes</div>
+  <div class="item2">Open Since 2013</div>
+  <div class="item3">Chicken Restaurant</div>  
+  <div class="item4">Fresh Chicken Daily</div>
+  <div class="item5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at quam enim. Proin dapibus semper diam, eget ornare nisi consectetur sed. Mauris consequat eros sed sagittis tempus. Aliquam sodales magna lectus, sit amet ornare enim rutrum ac. Vestibulum sed ante vehicula, sollicitudin ipsum at, volutpat felis. Duis consequat consequat lorem eget maximus. Donec sagittis massa mauris, eget imperdiet ipsum feugiat quis. Ut varius sagittis magna eget finibus. Morbi tempor rhoncus nibh, sit amet auctor ante lobortis vel. Suspendisse lobortis tempor massa, et pellentesque eros euismod eu. Sed id massa orci. Donec imperdiet, nibh sit amet gravida congue, eros dolor lacinia ipsum, vel dignissim felis dui at dolor. In a accumsan tortor, at accumsan ante. Nunc imperdiet, sem eget aliquet eleifend, nulla odio iaculis purus, a sagittis magna nisi a augue. Suspendisse molestie iaculis urna, et aliquam purus rutrum id. Integer dignissim hendrerit lectus sed lacinia.</div>
+</div>
+  
+  
+</body>
+</html>

@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+}
+ul{
+  list-style-type: none;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: gold;
+  position: fixed;
+  top: 0;
+}
+li{
+  display: inline;
+  float: left;
+}
+li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 50px;
+  color: blue;
+}
+p{
+  color: blue;
+}
+div.sticky{
+  position: sticky;
+  top: 0;
+  background-color: lightblue;
+  border: 3px solid gold;
+  text-align: center;
+  top: 2%;
+}
+div.abs{
+  position: absolute;
+  background-color: salmon;
+  right: 810px;
+  width: 300px;
+  height: ;
+  border: 2px solid gold;
+  text-align: center;
+  top: 7.75%
+}
+div.max{
+  border: 3px solid gold;
+  max-width: 300px;
+  max-height: 200px;
+  top: 35%;
+}
